@@ -43,6 +43,11 @@
    min-height: 1px;
    margin:0 2% 20px;
  }
+ @media (min-width:300px){
+ .one-half {
+   width: 46%;
+  }
+ }
 
  @media (min-width: 768px) {
    .container {
@@ -82,11 +87,12 @@
    text-align: right;
    float:right;
    margin:0;
+   padding:0;
  }
  header nav ul > li {
    list-style-type: none;
    display: inline-block;
-   margin:0 15px;
+   margin:0 5px;
  }
  header nav ul > li.btn-outline {
    padding:10px 15px;
@@ -111,18 +117,31 @@
  header .hero h1 {
    font-size:48px;
    font-weight: normal;
-   margin:95px 0 0;
    color:black;
  }
+@media (min-width:992px){
+  header .hero h1 {
+    margin:95px 0 0;
+  }
+}
+
  header .hero p {
-   font-size: 22px;
+   font-size: 17px;
    line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
  }
+ 
+ @media (min-width: 768px) {
+   header .hero p {
+    font-size:22px;
+   }
+  }
+
  header .hero img {
    display: block;
    margin:3em auto 0;
+   width:100%;
  }
   /* BUTTONS */
  .btn {
