@@ -422,6 +422,12 @@
 
  }
 
+ @media (max-width:1230px){
+    .settings p {
+      font-size: 10px;
+    }
+ }
+
  @media (min-width:992px) {
    .left-nav {
      height: 100vh;
@@ -525,6 +531,24 @@
    margin-right:10px;
    margin-top:8px;
  }
+  .left-nav .settings ul {
+    margin-top: 0;
+  }
+  .left-nav .settings ul.menu ul.dropit-submenu {
+    top: initial;
+    bottom:1px;
+    padding: 10px;
+    width: 147px;
+    text-align: left;
+  }
+  .left-nav .settings ul.menu ul.dropit-submenu:after {
+    border-width:8px 8px 0;
+    top:initial;
+    bottom:-8px;
+  }
+  .left-nav .settings ul.menu ul.dropit-submenu a {
+    float: left;
+  }
   /* CONTENT */
  .content {
    padding:6em 1% 1.5em;
